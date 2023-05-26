@@ -1,4 +1,4 @@
-import {memo, useCallback} from 'react';
+import React, {memo} from 'react';
 import propTypes from 'prop-types';
 import {numberFormat} from "../../utils";
 import {cn as bem} from "@bem-react/classname";
@@ -20,7 +20,7 @@ function ItemBasket(props) {
       <div className={cn('right')}>
         <div className={cn('cell')}>{numberFormat(props.item.price)} ₽</div>
         <div className={cn('cell')}>{numberFormat(props.item.amount || 0)} шт</div>
-        <div className={cn('cell')}><button onClick={callbacks.onRemove}>Удалить</button></div>
+        <div className={cn('cell')}><button onClick={callbacks.onRemove}>{props.lang.button.remove}</button></div>
       </div>
     </div>
   )
@@ -33,6 +33,7 @@ ItemBasket.propTypes = {
     price: PropTypes.number,
     amount: PropTypes.number
   }).isRequired,
+  lang: PropTypes.object.isRequired,
   onRemove: propTypes.func,
 }
 

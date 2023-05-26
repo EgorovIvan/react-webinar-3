@@ -32,3 +32,14 @@
   white-space: nowrap;
   font-size: 18px;
 }
+
+.Item-nav {
+  color: black;
+  font-size: 25px;
+  text-decoration: none
+}
+
+.Item-nav:hover {
+  text-decoration: underline;
+}
+
