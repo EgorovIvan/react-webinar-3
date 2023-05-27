@@ -9,7 +9,7 @@ function BasketTool({sum, amount, onOpen, lang}) {
   const cn = bem('BasketTool');
   return (
     <div className={cn()}>
-      <div>
+      <div className={cn('link')}>
         <NavLink to={'/'} className={cn('nav')}>
           {lang.link}
         </NavLink>

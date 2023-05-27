@@ -19,10 +19,10 @@ function ProductInfo(props) {
 				{props.item.description}
 			</div>
 			<div className={cn('text')}>
-				{props.lang.info.country}: <b>{props.item.madeIn.title}</b>
+				{props.lang.info.country}: <b>{props.item.madeIn?.title}</b>
 			</div>
 			<div className={cn('text')}>
-				{props.lang.info.category}: <b>{props.item.category.title}</b>
+				{props.lang.info.category}: <b>{props.item.category?.title}</b>
 			</div>
 			<div className={cn('text')}>
 				{props.lang.info.year}: <b>{props.item.edition}</b>

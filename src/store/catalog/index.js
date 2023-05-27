@@ -19,7 +19,7 @@ class Catalog extends StoreModule {
 	}
 	
 	async load() {
-		const limit = 121;
+		const limit = 125;
 		const skip = 0;
 		const limitPage = 10;
 		

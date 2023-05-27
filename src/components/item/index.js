@@ -19,8 +19,7 @@ function Item(props) {
 			<div className={cn('title')}
            onClick={() => props.setIdProduct(props.item._id)}>
 					<NavLink to={`/product/${props.item._id}`}
-                   className={cn('nav')}
-          >
+                   className={cn('nav')}>
 						{props.item.title}
 					</NavLink>
 			</div>

@@ -37,3 +37,23 @@
   text-align: center;
   color: #CCCCCC
 }
+
+.Pagination-active {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 1px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  border: 1px;
+  background-color: #0087E9;;
+  cursor: pointer;
+}

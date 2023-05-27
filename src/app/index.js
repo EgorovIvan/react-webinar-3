@@ -26,7 +26,8 @@ function App() {
                element={<Product idProduct={idProduct} lang={lang.product}
                                  setLang={setLang}/>}/>
       </Routes>
-      {activeModal === 'basket' && <Basket lang={lang.basket} setLang={setLang}/>}
+      {activeModal === 'basket' && <Basket setIdProduct={setIdProduct}
+                                           lang={lang.basket} setLang={setLang}/>}
     </BrowserRouter>
   );
 }
